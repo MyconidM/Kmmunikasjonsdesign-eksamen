@@ -14,13 +14,17 @@ header {
     padding: 0;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-image: url("https://plus.unsplash.com/premium_photo-1661851293346-dfd1f54773bc?auto=format&fit=crop&q=80&w=1248&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-position: top left;
 }
 
+#introduction {
+}
+
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
 }
@@ -31,7 +35,7 @@ h1 {
 
 .scrollContainer {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     overflow: hidden;
     transition: background-image 2s;
 }
@@ -40,19 +44,41 @@ h1 {
     margin: 50vh auto;
     max-width: 50rem;
     padding: 1rem;
+    font-size: large;
     background: rgba(255, 255, 255, 0.8);
     color: #000;
+    text-align: center;
 }
 
 /* https://www.youtube.com/watch?v=-pDPASqX97w */
 .bieConteiner {
     position:fixed;
-    top: 50vh;
+    top: 70vh;
     margin-top: -50px;
     /* translate: calc(1% * (max(var(--scroll), 25) - 25)); */
-
 }
 #honningbie {
     width: 10rem;
     height: auto;
+    display: block;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#segment-1 {
+    background-image: url("bilder/IMG_0449.GIF");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media only screen and (min-width: 700px) {
+    .bieConteiner {
+        margin-left: 7rem;
+    }
+
+    .scrollText {
+    font-size:xx-large;
+    }
 }
