@@ -2,21 +2,25 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 header {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://images.unsplash.com/photo-1612787733353-dd9ead94246d?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://images.unsplash.com/photo-1491002052546-bf38f186af56?q=80&w=1816&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-position: top left;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     color: #fff;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 3px 2px 2px #000;
 }
 
 header a {
@@ -31,25 +35,40 @@ header a {
     width: 100vw;
     min-height: 60vh;
     overflow: hidden;
-    transition: background-image 2s;
+    transition: background-image 1s;
 }
 
-.scrollText {
+.maintext {
     margin: 50vh auto;
     max-width: 50rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.8);
-    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 3px 2px 2px black;
+    background-color: rgba(0, 0, 0, .5);
 }
 #changingBg {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-bottom: 50vh;
+    padding-bottom: 100vh;
 }
-#introduction {
-    background-image: url("https://images.unsplash.com/photo-1494172961521-33799ddd43a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80");
+#segment1 {
+    background-image: url("https://images.unsplash.com/photo-1516820208784-270b250306e3?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#segment3 {
+    color: red;
+}
+
+#segment4 {
+    background-image: url("https://images.unsplash.com/photo-1520891178068-b4fce513b3d3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,13 +85,7 @@ header a {
     float: right;
     margin: 0 0 1rem 1rem;
 }
-.circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    padding-top: 50px;
-    box-sizing: border-box;
-}
+
 .redBg {
     background: #b61010;
     color: #fff;
@@ -80,16 +93,4 @@ header a {
 .greenBg {
     background: #588002;
     color: #fff;
-}
-.big {
-    text-align: center;
-    font-size: 4rem;
-    display: block;
-    clear: both;
-}
-.small {
-    text-align: center;
-    font-size: 2rem;
-    margin: 0 auto;
-    display: block;
 }
