@@ -66,7 +66,8 @@ h1 {
 }
 
 #segment-1 {
-    background-image: url("bilder/IMG_0449.GIF");
+    /* Gif animert av Mayen, bakgruns bilde fra https://pixabay.com/illustrations/3d-model-world-earth-geography-2911429/ */
+    background-image: url("bilder/IMG_0449.GIF"); 
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

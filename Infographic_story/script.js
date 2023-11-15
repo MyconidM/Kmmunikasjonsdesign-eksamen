@@ -20,47 +20,47 @@ function setScroll() {
     } else if (scrollCount <= 210 && scrollCount >= 110) { // Hjelp fra ChatGBT
         // Scrolling up or reversing the movement
         for (let i = 0; i < moveBie.length; i++) {
-            const newXPosition = biePositionX - (scrollCount - 90) * 2; // Adjust the factor as needed
+            const newXPosition = biePositionX - (scrollCount - 50) * 2; // Adjust the factor as needed
             moveBie[i].style.transform = `translateX(${newXPosition}px)`;
         }
     } else if (scrollCount <= 350 && scrollCount >= 230) {
          for (let i = 0; i < moveBie.length; i++) {
-            const newXPosition = biePositionX + (scrollCount - 320) * 2; // Adjust the factor as needed
+            const newXPosition = biePositionX + (scrollCount - 390) * 2; // Adjust the factor as needed
             moveBie[i].style.transform = `translateX(${newXPosition}px)`;
         }
     } else if (scrollCount <= 450 && scrollCount >= 350) {
         for (let i = 0; i < moveBie.length; i++) {
-           const newXPosition = biePositionX - (scrollCount - 385) * 2; // Adjust the factor as needed
+           const newXPosition = biePositionX - (scrollCount - 310) * 2; // Adjust the factor as needed
            moveBie[i].style.transform = `translateX(${newXPosition}px)`;
        }
    } else if (scrollCount <= 550 && scrollCount >= 450) {
         for (let i = 0; i < moveBie.length; i++) {
-        const newXPosition = biePositionX + (scrollCount - 530) * 2; // Adjust the factor as needed
+        const newXPosition = biePositionX + (scrollCount - 590) * 2; // Adjust the factor as needed
         moveBie[i].style.transform = `translateX(${newXPosition}px)`;
         }
    } else if (scrollCount <= 650 && scrollCount >= 550) {
         for (let i = 0; i < moveBie.length; i++) {
-        const newXPosition = biePositionX - (scrollCount - 580) * 2; // Adjust the factor as needed
+        const newXPosition = biePositionX - (scrollCount - 510) * 2; // Adjust the factor as needed
         moveBie[i].style.transform = `translateX(${newXPosition}px)`;
         }
     } else if (scrollCount <= 750 && scrollCount >= 650) {
         for (let i = 0; i < moveBie.length; i++) {
-           const newXPosition = biePositionX + (scrollCount - 730) * 2; // Adjust the factor as needed
+           const newXPosition = biePositionX + (scrollCount - 790) * 2; // Adjust the factor as needed
            moveBie[i].style.transform = `translateX(${newXPosition}px)`;
         }
     } else if (scrollCount <= 850 && scrollCount >= 750) {
         for (let i = 0; i < moveBie.length; i++) {
-           const newXPosition = biePositionX - (scrollCount - 800) * 2; // Adjust the factor as needed
+           const newXPosition = biePositionX - (scrollCount - 710) * 2; // Adjust the factor as needed
            moveBie[i].style.transform = `translateX(${newXPosition}px)`;
         }
     } else if (scrollCount <= 950 && scrollCount >= 850) {
         for (let i = 0; i < moveBie.length; i++) {
-            const newXPosition = biePositionX + (scrollCount - 890) * 2; // Adjust the factor as needed
+            const newXPosition = biePositionX + (scrollCount - 990) * 2; // Adjust the factor as needed
             moveBie[i].style.transform = `translateX(${newXPosition}px)`;
         }
     } else if (scrollCount <= 1050 && scrollCount >= 950) {
         for (let i = 0; i < moveBie.length; i++) {
-           const newXPosition = biePositionX - (scrollCount - 1000) * 2; // Adjust the factor as needed
+           const newXPosition = biePositionX - (scrollCount - 905) * 2; // Adjust the factor as needed
            moveBie[i].style.transform = `translateX(${newXPosition}px)`;
         }
     }
