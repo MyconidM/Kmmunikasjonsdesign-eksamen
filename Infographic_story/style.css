@@ -74,6 +74,22 @@ h1 {
     background-position: center center;
 }
 
+#segment-3 {
+    background-image: url("bilder/bie_hirarki.png"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#segment-6 {
+    background-image: url("bilder/Plantepolonering_prosentPichart.png"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 @media only screen and (min-width: 700px) {
     .bieConteiner {
         margin-left: 7rem;
