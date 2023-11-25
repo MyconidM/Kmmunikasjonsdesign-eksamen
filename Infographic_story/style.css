@@ -55,6 +55,7 @@ h1 {
     position:fixed;
     top: 70vh;
     margin-top: -50px;
+    z-index: 1
     /* translate: calc(1% * (max(var(--scroll), 25) - 25)); */
 }
 #honningbie {
@@ -82,20 +83,47 @@ h1 {
     background-position: center center;
 }
 
-#segment-6 {
-    background-image: url("bilder/Plantepolonering_prosentPichart.png"); 
+#segment-5 {
+    background-image: url("bilder/iStock-681650136.jpg"); 
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
+#segment-7 {
+    background-image: url("bilder/iStock-1388220574.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#segment-7 .scrollText{
+   margin-top: 3rem;
+}
+
+#segment-8 {
+    background-image: url("bilder/iStock-1332506036.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#segment-8 .scrollText{
+    margin-top: 30vh;
+ }
+
+
+
 @media only screen and (min-width: 700px) {
     .bieConteiner {
-        margin-left: 7rem;
+        margin-left: 30vh;
     }
 
     .scrollText {
-    font-size:xx-large;
+    font-size:medium;
+    }
+    #kakedeiagram {
+        height: 200px;
     }
 }

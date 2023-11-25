@@ -14,13 +14,13 @@ function setScroll() {
     if (scrollCount <= 110) {
         // Scrolling down or initial movement
         for (let i = 0; i < moveBie.length; i++) {
-            moveBie[i].style.transform = `translateX(calc(1% * (max(var(--scroll), 25) - 25) * 100/75))`;
+            moveBie[i].style.transform = `translateX(calc(1% * (max(var(--scroll), 25) - 100) * 100/75))`;
             biePositionX = window.scrollX + moveBie[i].getBoundingClientRect().left;
         }
     } else if (scrollCount <= 210 && scrollCount >= 110) { // Hjelp fra ChatGBT
         // Scrolling up or reversing the movement
         for (let i = 0; i < moveBie.length; i++) {
-            const newXPosition = biePositionX - (scrollCount - 50) * 2; // Adjust the factor as needed
+            const newXPosition = biePositionX - (scrollCount - 10) * 2; // Adjust the factor as needed
             moveBie[i].style.transform = `translateX(${newXPosition}px)`;
         }
     } else if (scrollCount <= 350 && scrollCount >= 230) {
