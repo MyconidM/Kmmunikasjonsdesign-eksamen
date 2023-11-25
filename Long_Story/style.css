@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2023/02/09/21/35/sailboat-7779645_1280.jpg");
+    background-size: cover;
+    background-position: top left;
+}
