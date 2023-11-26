@@ -10,11 +10,15 @@ body {
     margin: 0;
     padding: 0;
 }
+div, article, section {
+    box-sizing: border-box;
+}
 
 
 header {
     display: flex;
     height: 100vh;
+    width: auto;
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -26,12 +30,19 @@ header {
     background-position: top left;
     color: white;
     font-size: x-large;
+    position: relative;
+    z-index: 10;
 }
 
+
+/* https://www.w3schools.com/howto/howto_css_timeline.asp */
 .container {
     height: 100vh;
     overflow: hidden;
     transition: background-image 2s;
+    position: relative;
+    display: block;
+    z-index: 10;
 }
 
 .content {
@@ -42,4 +53,20 @@ header {
     background: rgba(255, 255, 255, 0.8);
     color: #000;
     text-align: left;
+}
+#mapContainer {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.scroll__text {
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    display: block;
 }
