@@ -70,3 +70,11 @@ header {
     z-index: 5;
     display: block;
 }
+
+#segment2 {
+    background-image: url("bilder/placeholder.png"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

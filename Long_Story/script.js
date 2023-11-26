@@ -46,10 +46,10 @@
  })
  //SCRIPT FOR CHANGING MAP LOCATION
  document.addEventListener('scroll', function () {
-     if(isInViewport(document.getElementById("segment1"))) {
+     if(isInViewport(document.getElementById("start"))) {
          map.flyTo([centerLat, centerLong], 13)
      }
-     if(isInViewport(document.getElementById("segement2"))) {
+     if(isInViewport(document.getElementById("segment1"))) {
          map.flyTo([59.1261,11.3858], 17)
      }
     //  if(isInViewport(document.getElementById("r1000s"))) {
