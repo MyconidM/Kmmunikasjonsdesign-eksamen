@@ -99,7 +99,7 @@ header {
     position: absolute;
     width: 25px;
     height: 25px;
-    left: -17px;
+    left: -90px;
     background-color: white;
     border: 4px solid #FF9F55;
     top: 15px;
@@ -110,5 +110,6 @@ header {
   @media screen and (min-width: 600px) {
     .content {
         font-size: large;
+        margin-left: 10rem;
     }
     }
