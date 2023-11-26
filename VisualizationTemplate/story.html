@@ -14,32 +14,27 @@
             <h1>Frosne Tårer</h1>
         </div>
     </header>
-    <section id="segment1" class="scrollContainer">
-        <div class="maintext"><p>Det er ingenting mer lykkeligere for en forelder enn å se barnet sitt vokse.</p></div>
-        <div class="maintext"><p>Men samtidig skulle man ønske at man kunne fryse tiden bare så vi kunne se dem som barn for evig.</p></div>
-        <div class="maintext"><p>Og dette er en hendelse som starter i Lindesnes.</p></div>
-
-    </section>
-
     <section id="changingBg" class="scrollContainer">
-        <div id="segment2" class="maintext"><p>Familien Seland dro ut på jakt med den vesle gutten sin og barnet tok med seg solbrillene sine.</p></div>
-        <div class="maintext"><p>Det er en søndag og det er en perfekt dag å tilbringe tid med familien.</p></div>
-        <div class="maintext"><p>På samme dag dukker det plutselig opp noe, det stormer inn med artikler og nyheter.</p></div>
-        <div class="maintext"><p>...</p></div>
+    <div id="segment1">
+        <div class="container" ><p class="maintext">Det er ingenting mer lykkeligere for en forelder enn å se barnet sitt vokse.</p></div>
+        <div class="container"><p class="maintext">Men samtidig skulle man ønske at man kunne fryse tiden bare så vi kunne se dem som barn for evig.</p></div>
+        <div class="container"><p class="maintext">Og dette er en hendelse som starter i Lindesnes.</p></div>
+    </div>
 
-        <div id="segment3" class="maintext"><h2>Det er et barn som har blitt savnet og meldt klokken 13.30 samme dag.</h2></div>
-        <div class="maintext"><p>Politiet starter en aksjon. Helikopter, varmesøkende og hunder blir brukt.</p></div>
+        <div id="segment2" class="container"><p class="maintext">Familien Seland dro ut på jakt med den vesle gutten sin og barnet tok med seg solbrillene sine.</p></div>
+        <div class="container"><p class="maintext">Det er en søndag og det er en perfekt dag å tilbringe tid med familien.</p></div>
+        <div class="container"><p class="maintext">På samme dag dukker det plutselig opp noe, det stormer inn med artikler og nyheter.</p></div>
+        <div class="container"><p class="maintext">...</p></div>
 
-    </section>
+        <div class="container"><h2 id="segment3" class="maintext">Det er et barn som har blitt savnet og meldt klokken 13.30 samme dag.</h2></div>
+        <div class="container"><p class="maintext">Politiet starter en aksjon. Helikopter, varmesøkende og hunder blir brukt.</p></div>
 
-    <section id="segment4" class="scrollContainer">
-        <div class="maintext"><p>Ikke bare politiet, men forsvaret, sivilforsvaret, heimevernet, Røde Kors og frivillige kom for å hjelpe.</p></div>
-        <div class="maintext"><p>Det eneste sporet de hadde, kom inn klokken 10.30 dagen etter og det var kun et par med solbriller.</p></div>
-
-    </section>
-
-    <section id="changingBg" class="scrollContainer">
-        <div id="segment5" class="maintext"><h2>Den lille gutten, sine solbriller.</h2></div>
+    <div>
+        <div id="segment4" class="container"><p class="maintext">Ikke bare politiet, men forsvaret, sivilforsvaret, heimevernet, Røde Kors og frivillige kom for å hjelpe.</p></div>
+        <div class="container"><p class="maintext">Det eneste sporet de hadde, kom inn klokken 10.30 dagen etter og det var kun et par med solbriller.</p></div>
+    </div>
+    
+    <div id="segment5" class="container"><h2 class="maintext">Den lille gutten, sine solbriller.</h2></div>
 
     </section>
 
@@ -59,16 +54,24 @@
         }
 
         document.addEventListener('scroll', function () {
-            if(isInViewport(document.getElementById("segment1"))) {
+            const element = document.documentElement;
+            const percentOfScreenHeightScroll = element.scrollTop / element.clientHeight;
+            const scrollCount = Math.min(percentOfScreenHeightScroll * 100);
+            console.log('Y: ' + scrollCount);
+            element.style.setProperty("--scroll", scrollCount);
+            if(scrollCount <=100) {
                 document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1516820208784-270b250306e3?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
             }
-            if(isInViewport(document.getElementById("segment2"))) {
+            if(scrollCount <=500 && scrollCount >=400) {
                 document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1512465269789-c68a7b268792?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
             }
-            if(isInViewport(document.getElementById("segment3"))) {
+            if(scrollCount <=1000 && scrollCount >=900) {
                 document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
             }
-            if(isInViewport(document.getElementById("segment5"))) {
+            if(scrollCount <=1400 && scrollCount >=1300) {
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1520891178068-b4fce513b3d3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+            }
+            if(scrollCount <=1600 && scrollCount >=1500) {
                 document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1512618831669-521d4b375f5d?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
             }
 
