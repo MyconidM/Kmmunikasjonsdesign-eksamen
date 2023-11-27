@@ -34,22 +34,26 @@
         <div class="container"><p class="maintext">Det eneste sporet de hadde, kom inn klokken 10.30 dagen etter og det var kun et par med solbriller.</p></div>
     </div>
     
-    <div id="segment5" class="container"><h2 class="maintext">Den lille gutten, sine solbriller.</h2></div>
-    <div class="container"><p class="maintext">Kysten og innlandet av Lindesnes begynner å bli mørkt og kaldt.</p></div>
-    <div id="segment6" class="container"><p class="maintext">Det har gått en dag fra da det først ble meldt og når de fant det første sporet.</p></div>
-    <div class="container"><p class="maintext">Fryser den vesle gutten? Er han sulten? Er han tørst?</p></div>
-    <div class="container"><p class="maintext">Men ikke minst, er han redd?</p></div>
-    <div class="container"><p class="maintext">Gutten var ikke kledd for å være ute i lengden.</p></div>
-    <div class="container"><p class="maintext">Det gikk enda en dag til, men det kom nyheter.</p></div>
-    <div class="container"><p class="maintext">Han hadde blitt funnet, hundepatruljen fant den vesle gutten.</p></div>
-    <div class="container"><p class="maintext">Det hadde vist seg at han hadde gått en veldig lang vei i kulden.</p></div>
-    <div class="container"><p class="maintext">Men gutten var ikke alene lenger.</p></div>
-    <div class="container"><p class="maintext">Gutten var omringet av alle som hadde forsøkt å finne ham.</p></div>
-    <div class="container"><p class="maintext">Gutten var omringet av alle klassene på skolen hans.</p></div>
-    <div class="container"><p class="maintext">Ikke minst var gutten omringet av familien hans.</p></div>
-    <div class="container"><p class="maintext">Noe ble fryst den dagen, og det var dessverre ikke tiden.</p></div>
-    <div class="container"><h2 class="maintext">Du er i varmen nå, hvil i fred kjære Torjus (7).</h2></div>
+    <div>
+        <div id="segment5" class="container"><h2 class="maintext">Den lille gutten, sine solbriller.</h2></div>
+        <div class="container"><p class="maintext">Kysten og innlandet av Lindesnes begynner å bli mørkt og kaldt.</p></div>
+        <div id="segment6" class="container"><p class="maintext">Det har gått en dag fra da det først ble meldt og når de fant det første sporet.</p></div>
+        <div class="container"><p class="maintext">Fryser den vesle gutten? Er han sulten? Er han tørst?</p></div>
+        <div class="container"><p class="maintext">Men ikke minst, er han redd?</p></div>
+        <div class="container"><p class="maintext">Gutten var ikke kledd for å være ute i lengden.</p></div>
+        <div class="container"><p class="maintext">Det gikk enda en dag til, men det kom nyheter.</p></div>
+    </div>
 
+    <div>
+        <div id="segment7" class="container"><p class="maintext">Han hadde blitt funnet, hundepatruljen fant den vesle gutten.</p></div>
+        <div class="container"><p class="maintext">Det hadde vist seg at han hadde gått en veldig lang vei i kulden.</p></div>
+        <div class="container"><p class="maintext">Men gutten var ikke alene lenger.</p></div>
+        <div id="segment8" class="container"><h2 class="maintext">Gutten var omringet av alle som hadde forsøkt å finne ham.</h2></div>
+        <div id="segment9" class="container"><h2 class="maintext">Gutten var omringet av alle klassene på skolen hans.</h2></div>
+        <div id="segment10" class="container"><h2 class="maintext">Ikke minst var gutten omringet av familien hans.</h2></div>
+        <div class="container"><p class="maintext">Noe ble fryst den dagen, og det var dessverre ikke tiden.</p></div>
+        <div id="segment11" class="container"><h1>Du er i varmen nå, hvil i fred kjære Torjus (7).</h1></div>
+    </div>
 
 
     </section>
@@ -61,7 +65,6 @@
         function isInViewport(el) {
             const rect = el.getBoundingClientRect();
             return (
-                //Improved check of viewport for elements exceeding viewport height
                 (rect.top <= 0 && rect.bottom >= 0) || 
                 (rect.top >= 0 && rect.left >= 0 &&
                 rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
@@ -90,11 +93,24 @@
             if(scrollCount <=1600 && scrollCount >=1500) {
                 document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1512618831669-521d4b375f5d?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
             }
-            if(scrollCount <=2000 && scrollCount >=1900) {
+            if(scrollCount <=2100 && scrollCount >=2000) {
                 document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1534577403868-27b805ca4b9c?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"    
             }
-            if(scrollCount <=2000 && scrollCount >=1900) {
-                document.getElementById("changingBg").style.backgroundImage = "url()"    
+            if(scrollCount <=2700 && scrollCount >=2600) {
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1452975261254-982078333ab5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"    
+            }
+            if(scrollCount <=3300 && scrollCount >=3200) {
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1675238451663-6238952e079e?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"    
+            }
+            if(scrollCount <=3500 && scrollCount >=3400) {
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1588075592405-d3d4f0846961?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"    
+            }
+            if(scrollCount <=3700 && scrollCount >=3600) {
+                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1504439268584-b72c5019471e?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"    
+            }
+            // VG.(2023, 18.oktober) Ordføreren om Torjus (7): − Vi har mistet en skjønn liten gutt. VG. https://www.vg.no/nyheter/innenriks/i/wA2oGG/torjus-7-funnet-doed-familien-takker-alle-som-har-bidradd
+            if(scrollCount <=3900 && scrollCount >=3800) {
+                document.getElementById("changingBg").style.backgroundImage = "url(https://akamai.vgc.no/v2/images/352c03a3-f034-4cc2-adbe-54dd31a73fbb?fit=crop&format=auto&h=584&w=747&s=aff29f5071cd775d49a1d0970564b0c4b9c2a884)"    
             }
 
         }, {

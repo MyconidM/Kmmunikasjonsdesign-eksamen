@@ -23,13 +23,7 @@ h1 {
     text-shadow: 3px 2px 2px #000;
 }
 
-header a {
-    background: #000;
-    color: #fff;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1rem;
-}
+
 
 .scrollContainer {
     width: 100vw;
@@ -60,16 +54,14 @@ header a {
     background-attachment: fixed;
     padding-bottom: 100vh;
 }
-#segment1 {
-    background-image: url("https://images.unsplash.com/photo-1516820208784-270b250306e3?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 
 #segment3 {
     color: red;
+}
+
+#segment11 {
+    text-align: center;
+    text-shadow: 3px 2px 2px black;
 }
 
 .textSection {
