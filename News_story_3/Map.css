@@ -22,16 +22,19 @@ header {
     margin: 0;
     padding: 0;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
-    /* Bilde sorce:  https://www.aftenposten.no/historie/i/wOByPd/nordmenn-dro-til-new-zealand-slik-var-livet-i-70-mile-bush */
-    background-image: url("https://premium.vgc.no/v2/images/d9a36e34-bd03-462b-a60d-3ddeff91a383?fit=crop&format=auto&h=1470&w=2048&s=b78fd2c3382b8fc0ae28bb4956f604cf09b9f452"); 
+    /* Bilde sorce:   */
+    background-image: url("bilder/Cathrine_jobber.jpeg"); 
     background-size: cover;
-    background-position: top left;
+    background-position: center left;
     color: white;
     font-size: x-large;
     position: relative;
     z-index: 10;
+}
+header h1 {
+    margin: 8rem 2rem;
 }
 
 
@@ -63,8 +66,40 @@ header {
     display: block;
 }
 
+#start {
+    background-image: url("bilder/Fiskemiddag.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#segment1 {
+    background-image: url("bilder/Skyggene_på_bordet.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 #segment2 {
     background-image: url("bilder/placeholder.png"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#segment6 {
+    background-image: url("bilder/Opning_utstilling_nov_2023.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#segment7 {
+    background-image: url("bilder/opsett_utstilling.jpg"); 
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,14 +111,17 @@ header {
     max-width: 50rem;
     font-size: small;
     color: #000;
-    text-align: left;
+    text-align: center;
     padding: 10px 40px;
     position: relative;
     width: 80%;
     background: rgba(255, 255, 255, 0.8);
-    border-left: 6px solid rgb(85, 85, 85);
   }
 
+  .tidslinje {
+    border-left: 6px solid rgb(85, 85, 85);
+    text-align: left;
+  }
   
   /* The circles on the timeline */
   .tidslinje::after {
