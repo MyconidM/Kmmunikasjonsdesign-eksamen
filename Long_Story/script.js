@@ -46,10 +46,17 @@
  })
  //SCRIPT FOR CHANGING MAP LOCATION
  document.addEventListener('scroll', function () {
-     if(isInViewport(document.getElementById("start"))) {
+    const element = document.documentElement;
+    const percentOfScreenHeightScroll = element.scrollTop / element.clientHeight;
+    const scrollCount = Math.min(percentOfScreenHeightScroll * 100);
+    console.log('Y: ' + scrollCount);
+    element.style.setProperty("--scroll", scrollCount);
+   
+
+
+     if(scrollCount <= 200) {
          map.flyTo([centerLat, centerLong], 13)
-     }
-     if(isInViewport(document.getElementById("segment1"))) {
+     }else if(scrollCount <= 300 && scrollCount >= 200) {
          map.flyTo([59.1261,11.3858], 17)
      }
     //  if(isInViewport(document.getElementById("r1000s"))) {
