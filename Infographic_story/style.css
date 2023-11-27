@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://plus.unsplash.com/premium_photo-1661851293346-dfd1f54773bc?auto=format&fit=crop&q=80&w=1248&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: top left;
+}
+
+#introduction {
+}
+
+h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+:root {
+    --scroll: 0;
+}
+
+.scrollContainer {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    transition: background-image 2s;
+}
+
+.scrollText {
+    margin: 50vh auto;
+    max-width: 50rem;
+    padding: 1rem;
+    font-size: x-large;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    text-align: center;
+}
+
+/* https://www.youtube.com/watch?v=-pDPASqX97w */
+.bieConteiner {
+    position:fixed;
+    top: 70vh;
+    margin-top: -50px;
+    z-index: 1
+    /* translate: calc(1% * (max(var(--scroll), 25) - 25)); */
+}
+#honningbie {
+    width: 10rem;
+    height: auto;
+    display: block;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#segment-1 {
+    /* Gif animert av Mayen, bakgruns bilde fra https://pixabay.com/illustrations/3d-model-world-earth-geography-2911429/ */
+    background-image: url("bilder/IMG_0449.GIF"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#segment-3 {
+    background-image: url("bilder/bie_hirarki.png"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#segment-5 {
+    background-image: url("bilder/iStock-681650136.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#segment-7 {
+    background-image: url("bilder/iStock-1388220574.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#segment-7 .scrollText{
+   margin-top: 3rem;
+}
+
+#segment-8 {
+    background-image: url("bilder/iStock-1332506036.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#segment-8 .scrollText{
+    margin-top: 30vh;
+ }
+
+
+
+@media only screen and (min-width: 700px) {
+    .bieConteiner {
+        margin-left: 30vh;
+    }
+
+    .scrollText {
+    font-size:large;
+    }
+    #kakedeiagram {
+        height: 200px;
+    }
+}
