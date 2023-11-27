@@ -86,7 +86,7 @@ header {
 
   
   /* The circles on the timeline */
-  .content::after {
+  .tidslinje::after {
     content: '';
     position: absolute;
     width: 25px;

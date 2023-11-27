@@ -1,6 +1,6 @@
 //INITIATE MAP
-const centerLat = -39.48333
-const centerLong = 174.8860
+const centerLat = 59.911491
+const centerLong = 10.757933
 //let map = L.map('map').setView([centerLat, centerLong], 13);
 let map = L.map('mapContainer', {
     center: [centerLat, centerLong],
@@ -15,11 +15,11 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 //PLACES
 const places = [
-    {name: "Seventy Mile Bush", lat: -40.484802, long: 176.012157},
-    {name: "Norsewood", lat: -40.0360, long: 176.1260},
-    {name: "Rema 1000 Tistedal", lat: 59.1258, long: 11.4450},
-    {name: "Napier Port", lat: -39.48333, long: 176.91667},
-    {name: "Rema 1000 Svinesundsparken", lat: 59.1282, long: 11.2745}
+    {name: "Oslo tegne- og male skole", lat: 59.91450951142213, long: 10.757941626990723},
+    {name: "Kunst Akademiet i Praha", lat: 50.10287141172272, long: 14.424546410679467},
+    {name: "Metafora,Moderne kunst skole Barcelona", lat: 41.378277586150354, long: 2.1329286134953622},
+    {name: "Fredrikstad", lat: 59.2181, long: 10.9298},
+    // {name: "Rema 1000 Svinesundsparken", lat: 59.1282, long: 11.2745}
 ]
 
 //Function to check if element is in viewport
@@ -36,8 +36,9 @@ function isInViewport(el) {
 //SET MARKERS
 //create custom icon:
 const remaIcon = L.icon({
-    iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/The_Mangatainoko_River%2C_Seventy_Mile_Bush%2C_N.Z.jpg/2560px-The_Mangatainoko_River%2C_Seventy_Mile_Bush%2C_N.Z.jpg',
-    iconSize: [40,40],
+    //Bilde: https://pixabay.com/vectors/location-locator-map-position-1093169/
+    iconUrl: 'bilder/location-1093169_1280.png',
+    iconSize: [27,40],
     iconAnchor: [20,20],
     popupAnchor: [0, -20]
 })
@@ -46,27 +47,29 @@ places.map((place) => {
 })
 //SCRIPT FOR CHANGING MAP LOCATION
 document.addEventListener('scroll', function () {
-    if(isInViewport(document.getElementById("start"))) {
+    const element = document.documentElement;
+    const percentOfScreenHeightScroll = element.scrollTop / element.clientHeight;
+    const scrollCount = Math.min(percentOfScreenHeightScroll * 100);
+    console.log('Y: ' + scrollCount);
+    element.style.setProperty("--scroll", scrollCount);
+
+    
+    if(isInViewport(document.getElementById("segment1"))) {
         map.flyTo([centerLat, centerLong], 6)
     }
-    if(isInViewport(document.getElementById("Napier"))) {
-        map.flyTo([-39.48333,176.91667], 12)
+    if(isInViewport(document.getElementById("segment2"))) {
+        map.flyTo([59.91452026797165, 10.757941626990723], 17)
     }
-    if(isInViewport(document.getElementById("SMB"))) {
-        map.flyTo([-40.484802,176.012157], 8)
+    if(isInViewport(document.getElementById("segment3"))) {
+        map.flyTo([50.10287141172272, 14.424546410679467], 17)
     }
-    if(isInViewport(document.getElementById("r1000t"))) {
-        map.flyTo([59.1258, 11.4450], 17)
+    if(isInViewport(document.getElementById("segment4"))) {
+        map.flyTo([41.378277586150354, 2.1329286134953622], 17)
     }
-    if(isInViewport(document.getElementById("r1000br"))) {
-        map.flyTo([59.1291, 11.3796], 17)
+    if(scrollCount <= 800 && scrollCount >= 600) {
+        map.flyTo([59.2181, 10.9298], 10)
     }
-    if(isInViewport(document.getElementById("r1000r"))) {
-        map.flyTo([59.1186, 11.4092], 17)
-    }
-    if(isInViewport(document.getElementById("start"))) {
-        map.flyTo([centerLat, centerLong], 5)
-    }
+    
 }, {
     passive: true
 });
