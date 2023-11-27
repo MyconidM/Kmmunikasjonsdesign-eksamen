@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+div, article, section {
+    box-sizing: border-box;
+}
+#mapContainer {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+#scrollContainer {
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    padding-bottom: 50vh;
+    display: block;
+}
+.scrollBox {
+    position: relative;
+    display: block;
+    margin: 50vh 0 50vh 2rem;
+    z-index: 10;
+    width: 50%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #ccc;
+}
