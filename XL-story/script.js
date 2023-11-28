@@ -36,8 +36,8 @@
  //SET MARKERS
  //create custom icon:
  const remaIcon = L.icon({
-     iconUrl: 'rema1000symbol.png',
-     iconSize: [40,40],
+     iconUrl: 'bilder/location-1093169_1280.png',
+     iconSize: [28,40],
      iconAnchor: [20,20],
      popupAnchor: [0, -20]
  })
