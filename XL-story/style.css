@@ -64,9 +64,29 @@ header {
 }
 
 #segment2 {
-    background-image: url("bilder/placeholder.png"); 
+    background-color: rgb(227, 227, 227);
+    background-image: url("bilder/Bilde\ 12.jpg"); 
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+#segment4 {
+    background-image: url("bilder/Bilde\ 2.jpg"); 
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#segment7 {
+    background-color: rgb(227, 227, 227);
+    background-image: url("bilder/Bilde\ 1.jpg"); 
+    background-attachment: fixed;
+    background-size: auto;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center center;
 }
