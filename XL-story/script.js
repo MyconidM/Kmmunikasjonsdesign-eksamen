@@ -1,6 +1,6 @@
  //INITIATE MAP
- const centerLat = 59.1294
- const centerLong = 11.3537
+ const centerLat = 59.911491
+ const centerLong = 10.757933
  //let map = L.map('map').setView([centerLat, centerLong], 13);
  let map = L.map('mapContainer', {
      center: [centerLat, centerLong],
@@ -15,11 +15,12 @@
 
  //PLACES
  const places = [
-     {name: "Rema 1000 Risum", lat: 59.1186, long: 11.4092},
-     {name: "Rema 1000 Busterudgata", lat: 59.1261, long: 11.3858},
-     {name: "Rema 1000 Tistedal", lat: 59.1258, long: 11.4450},
-     {name: "Rema 1000 Brødløs", lat: 59.1291, long: 11.3796},
-     {name: "Rema 1000 Svinesundsparken", lat: 59.1282, long: 11.2745}
+     {name: "Napier Port", lat: -39.48333, long: 176.91667},
+     {name: "Norsewood", lat: -40.0360, long: 176.1260},
+     {name: "Seventy Mile Bush", lat: -40.484802, long: 176.012157},
+     {name: "Kristiania", lat: 59.911491, long: 10.757933},
+     {name: "Eidskog", lat: 59.98559, long: 12.05233},
+     
  ]
 
  //Function to check if element is in viewport
@@ -54,14 +55,17 @@
    
 
 
-     if(scrollCount <= 200) {
+     if(scrollCount <= 100) {
          map.flyTo([centerLat, centerLong], 13)
-     }else if(scrollCount <= 300 && scrollCount >= 200) {
-         map.flyTo([59.1261,11.3858], 17)
+     }else if(scrollCount <= 300 && scrollCount >= 100) {
+         map.flyTo([-39.48333, 176.91667], 6)
      }
-    //  if(isInViewport(document.getElementById("r1000s"))) {
-    //      map.flyTo([59.1282, 11.2745], 17)
-    //  }
+     if(scrollCount <= 300) {
+        map.flyTo([centerLat, centerLong], 13)
+    }else if(scrollCount <= 500 && scrollCount >= 300) {
+        map.flyTo([59.98559, 12.05233], 14)
+    }
+    
     //  if(isInViewport(document.getElementById("r1000t"))) {
     //      map.flyTo([59.1258, 11.4450], 17)
     //  }
