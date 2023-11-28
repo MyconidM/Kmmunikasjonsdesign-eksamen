@@ -29,12 +29,14 @@ header {
     background-size: cover;
     background-position: center left;
     color: white;
-    font-size: x-large;
+    font-size: large;
     position: relative;
     z-index: 10;
 }
+
 header h1 {
     margin: 8rem 2rem;
+    text-shadow: 2px 2px 1px #808080;
 }
 
 
@@ -159,6 +161,10 @@ li {
   }
 
   @media screen and (min-width: 600px) {
+    header {
+        font-size: x-large;
+    }
+    
     .content {
         font-size: large;
         margin-left: 10rem;
