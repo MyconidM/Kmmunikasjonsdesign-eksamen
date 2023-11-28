@@ -106,6 +106,18 @@ header h1 {
     background-position: center center;
 }
 
+#segment8 {
+    background-image: url("bilder/Bokens_slutt.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
 .content {
     margin: 10vh;
     max-width: 50rem;
