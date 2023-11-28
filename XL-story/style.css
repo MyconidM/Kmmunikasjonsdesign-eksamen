@@ -33,6 +33,10 @@ header {
     position: relative;
     z-index: 10;
 }
+header h1 {
+    text-shadow: 3px 3px 2px #696969;
+}
+
 
 
 /* https://www.w3schools.com/howto/howto_css_timeline.asp */
