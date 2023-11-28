@@ -60,12 +60,20 @@
      }else if(scrollCount <= 300 && scrollCount >= 100) {
          map.flyTo([-39.48333, 176.91667], 6)
      }
-     if(scrollCount <= 300) {
-        map.flyTo([centerLat, centerLong], 13)
-    }else if(scrollCount <= 500 && scrollCount >= 300) {
+     
+    
+    else if(scrollCount <= 400 && scrollCount >= 300) {
         map.flyTo([59.98559, 12.05233], 14)
     }
-    
+    else if(scrollCount <= 700 && scrollCount >= 600) {
+        map.flyTo([-39.48333, 176.91667], 10)
+    }
+    else if(scrollCount <= 800 && scrollCount >= 700) {
+        map.flyTo([-40.0360, 176.1260], 10)
+    }
+    else if(scrollCount <= 900 && scrollCount >= 800) {
+        map.flyTo([-40.484802, 176.012157], 10)
+    }
     //  if(isInViewport(document.getElementById("r1000t"))) {
     //      map.flyTo([59.1258, 11.4450], 17)
     //  }

@@ -72,16 +72,44 @@ header {
     background-position: center center;
     
 }
-
 #segment4 {
+    background-color: rgb(245, 245, 245);
+    background-image: url("bilder/Bilde\ 5.jpg"); 
+    background-attachment: fixed;
+    background-size: auto;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#segment5 {
     background-image: url("bilder/Bilde\ 2.jpg"); 
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+#segment9 {
+    background-color: rgb(245, 245, 245);
+    background-image: url("bilder/Bilde\ 13.jpg"); 
+    background-attachment: fixed;
+    background-size: auto;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
-#segment7 {
+#segment10 {
+    background-color: rgb(245, 245, 245);
+    background-image: url("bilder/Bilde\ 14.png"); 
+    background-attachment: fixed;
+    background-size: auto;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#segment11 {
     background-color: rgb(245, 245, 245);
     background-image: url("bilder/Bilde\ 1.jpg"); 
     background-attachment: fixed;
@@ -90,6 +118,14 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
 }
+#segment12 {
+    background-image: url("bilder/Bilde\ 16.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 
 .content {
     margin: 10vh;
@@ -123,7 +159,7 @@ header {
     position: absolute;
     border: 4px solid rgb(85, 85, 85);
     width: 1px;
-    height: 1000vh;
+    height: 1400vh;
     z-index: 15;
     left: 70px;
   }
