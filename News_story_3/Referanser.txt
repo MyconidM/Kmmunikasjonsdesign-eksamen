@@ -3,6 +3,7 @@ Det er brukt en del kode fra Tore Marius Akerbæk sine forelesninger https://git
 Bilder
 
 Alle bildene tatt er fra Cathrine bomans sosiale medier og hjemmeside
+Navnene på filene er samme som titelene til kunstverene
 
 http://www.cathrinemboman.no/
 
