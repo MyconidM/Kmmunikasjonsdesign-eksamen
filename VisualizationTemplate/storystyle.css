@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1491002052546-bf38f186af56?q=80&w=1816&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: top left;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 3px 2px 2px #000;
+}
+
+
+
+.scrollContainer {
+    width: 100vw;
+    min-height: 60vh;
+    overflow: hidden;
+    transition: background-image 1s;
+}
+
+.container {
+    max-height: 100vh;
+    height: 100vh;
+}
+
+.maintext {
+    margin: 50vh auto;
+    max-width: 50rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 3px 2px 2px black;
+    background-color: rgba(0, 0, 0, .5);
+}
+#changingBg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 100vh;
+}
+
+#segment3 {
+    color: red;
+}
+
+#segment11 {
+    text-align: center;
+    text-shadow: 3px 2px 2px black;
+}
+
+.textSection {
+    max-width: 50rem;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+}
+.alignRight {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+.redBg {
+    background: #b61010;
+    color: #fff;
+}
+.greenBg {
+    background: #588002;
+    color: #fff;
+}
